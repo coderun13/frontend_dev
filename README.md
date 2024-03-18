@@ -1,2 +1,2 @@
 # frontent_dev
-this contain html and css code
+this contains html,css and javascript code
