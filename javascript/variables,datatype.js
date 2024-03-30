@@ -1,8 +1,11 @@
 
+
 console.log("Lets start datatypes and variables");
 
 var a = 5;
+
 // a = a + 1
+
 let b = 6;
 let c = "snehal";
 let _a = "aryan";
