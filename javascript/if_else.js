@@ -82,13 +82,29 @@ if(color === "green"){
 /**
  * First name printing
  */
+
 let firstName = "snehal";
 if(firstName == "snehal"){
     console.log(`Welcome ${firstName}`)
 }
 
 
+/**
+ * Switch statement
+ */
 
+let light = "red";
 
-
-
+switch(light) {
+    case "red" :
+        console.log("stop");
+        break;
+    case "yellow" :
+        console.log("slow down");
+        break;
+    case "green" :
+        console.log("go");
+        break;
+    default:
+        console.log("broken light");
+}
