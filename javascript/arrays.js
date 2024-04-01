@@ -45,6 +45,7 @@ console.log(fruits.length);
  * Array methods(push,pop,shift,unshift)
 */
  
+
 /* push==(add to end)
  * pop==(delete from end &returns it)
  * shift==(delete from start & return it)
