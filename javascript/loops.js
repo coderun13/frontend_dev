@@ -80,6 +80,7 @@ if(guess == favMovie) {
     console.log("you quit")
  }*/
 
+ 
 // break keyword
 
 let j=1;
@@ -95,11 +96,11 @@ console.log("we used break at 3");
 
 //loops with arrays
 
-let fruits = ["mango","apple","orange","litchi","banana"]
+/*let fruits = ["mango","apple","orange","litchi","banana"]
 fruits.push("pineapple");   
 for(let i=0; i<fruits.length; i++){
     console.log(i,fruits[i]);
-}
+}*/
 
 //nested loops with nested arrays
 
@@ -115,6 +116,24 @@ for(let i=0; i<heroes.length; i++){
         }
     }
 
+//for of loop
+
+let fruits = ["mango","apple","banana","litchi","orange"];
+
+for(fruit of fruits) {
+    console.log(fruit);
+}
+
+for(char of "snehal"){
+    console.log(char);
+}
+
+//nested for of loop
+
+for(list of heroes){
+    for(hero of list){
+        console.log(hero);
+    }
+}
 
 
-    
