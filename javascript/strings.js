@@ -48,3 +48,5 @@ n.slice(-1)// 11-1=>10(ans is g)//
 
 n.replace("to","to do") //new to do coding 
 n.repeat(2)//newtocodingnewtocoding
+
+// parseInt(n) {n was string now by this it has become an int}
