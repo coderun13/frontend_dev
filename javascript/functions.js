@@ -48,17 +48,17 @@ isAdult(17);
  * Lexical scope == a variable defined outside a function can be accessible inside another function defined after the variable declaration.
  */
 
-//let sum = 54; //global scope
+//let sum = 54;  //global scope
 
 function calsum(a,b){
-    let sum = a+b; //function scope
+    let sum = a+b;  //function scope
     console.log(sum);
 }
 calsum(1,2);
 
 
 for(let i=1; i<=5; i++){
-    console.log(i); //block scope
+    console.log(i);  //block scope
 }
 
 
@@ -72,7 +72,7 @@ function outerfunc() {
 }
 
 
- // function expressions(functions stored as variables)
+ // Function Expressions(functions stored as variables)
 
 let hii = function() {
     console.log("hello");
@@ -87,7 +87,7 @@ hii();
  * returns a function
  */
 
-function multipleGreet(func,n){  //higher order function
+function multipleGreet(func,n){  //Higher order function
     for(let i=1; i<=n; i++){
         func();
     }
@@ -120,7 +120,7 @@ func(3) //true
 
 
 /**
- * methods(actions that can be performed on an object.)
+ * Methods(actions that can be performed on an object.)
  */
 
 const calculator = {
