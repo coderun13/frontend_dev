@@ -5,7 +5,7 @@
  */
 
 
-// creating objects(object doesn't have any specific order)
+// Creating objects(object doesn't have any specific order)
 
 let student = {
     name: "snehal",
@@ -17,7 +17,7 @@ let student = {
 console.log(student);
 
 
-// creating a twitter post
+// Creating a twitter post
 
 const post = {
     username: "snehal singh",
@@ -28,21 +28,21 @@ const post = {
 console.log(post);
 
 
-//get values
+//Get values
 
 console.log(post.username);
 console.log(post.likes);
 
 
-//add_update values 
+// Add_update values 
 
 student.city = "mumbai";  //value update from delhi to mumbai
 student.gender = "female"; // new value added
 console.log(student);
 
 
-//nested objects
-//object of objects
+//Nested objects
+//(object of objects)
 //storing information of multiple students
 
 const classInfo = {
