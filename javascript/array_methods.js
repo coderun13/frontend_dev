@@ -94,12 +94,13 @@ console.log(sum(2));
 // spread(expands an iterable into multiple values)
 
 let arry = [1,2,3,4,5];
+let arry2 = [6,7,8,9];
 
 console.log(...arry);
 
 console.log(..."snehal");
 
-let newarry = [...arry];
+let newarry = [...arry,...arry2]; //both array combines and new array is formed
 
 console.log(newarry);
 
