@@ -35,7 +35,7 @@ let gpa = students.map((el) => {
 });
 console.log(gpa);
 
-//filter function
+//filter method
 
 let nums = [1,2,3,4,5,6,7,8,9,10,12,11];
 
@@ -51,7 +51,7 @@ console.log(ans);
 
 console.log(an);
 
-//every function(returns true if every function is true)
+//every method(returns true if every function is true)
 
 console.log([2,6,4].every((el) => el%2 == 0));
 
@@ -59,7 +59,7 @@ console.log([2,6,4].every((el) => el%2 != 0));
 
 console.log([1,3,5].every((el) => el%2 != 0));
 
-//Some function(returns true if some elements of array give true)
+//Some method(returns true if some elements of array give true)
 
 console.log([1,3,5].some((el) => el%2 != 0));
 
@@ -67,7 +67,7 @@ console.log([2,6,4].some((el) => el%2 != 0));
 
 console.log([2,6,4].some((el) => el%2 == 0));
 
-//Reduce function(reduces the array to single value)
+//Reduce method(reduces the array to single value)
 
 console.log([1,2,3,4].reduce((res,el) => (res+el))); //(10)
 
@@ -83,5 +83,24 @@ let result = numb.reduce( (max,el) => {
     }
 });
 console.log(result);
+
+//default parameters
+
+function sum(a,b = 3){
+ return a+b;
+}
+console.log(sum(2));
+
+// spread(expands an iterable into multiple values)
+
+let arry = [1,2,3,4,5];
+
+console.log(...arry);
+
+console.log(..."snehal");
+
+let newarry = [...arry];
+
+console.log(newarry);
 
 
