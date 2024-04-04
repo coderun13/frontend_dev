@@ -38,13 +38,17 @@ console.log(gpa);
 //filter function
 
 let nums = [1,2,3,4,5,6,7,8,9,10,12,11];
+
 let ans = nums.filter((el) => {
     return el%2 == 0; //even -> true
 });
+
 let an = nums.filter((el) => {
     return el%2 != 0; // odd -> true
 });
+
 console.log(ans);
+
 console.log(an);
 
 //every function(returns true if every function is true)
