@@ -126,12 +126,24 @@ function sums(...args){
 }
 console.log(sums(2,3,4));
 
+//Destructing(storing values of array into multiple variables)
 
+let names = ["tony","bruce","steve","peter"];
+let[winner,runnerup,...others] = names;
+console.log(winner, runnerup); //"tony" "bruce"
 
+const student = {
+    name: "aryan",
+    class:9,
+    age: 14,
+    subjects: ["english","hindi","maths","sst","science"],
+    username: "aryan123",
+    password: 1234,
+    city: "Pune",//if city is not given then new value is assigned
+};
+const{ username: user, name: name, city: place ="mumbai" } = student;
 
-
-
-
+console.log(user,name,place);
 
 
 
