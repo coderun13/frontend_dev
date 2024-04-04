@@ -104,4 +104,38 @@ let newarry = [...arry,...arry2]; //both array combines and new array is formed
 
 console.log(newarry);
 
+let data = {
+    email: "hellospread@gmail.com",
+    password: "abcd",
+};
+
+let datacopy = {...data, id: 123};
+console.log(datacopy);
+
+//Rest(allows a function to take an indefinite number of arguments and bundle them in an array)
+
+function func(...args){
+    for (let i = 0; i< args.length; i++){
+    console.log("you gave us: ",args[i]);
+    }
+}
+console.log(func(1,2,89));
+
+function sums(...args){
+    return args.reduce((sum,el) => sum + el);
+}
+console.log(sums(2,3,4));
+
+
+
+
+
+
+
+
+
+
+
+
+
 
