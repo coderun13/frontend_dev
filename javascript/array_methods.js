@@ -9,8 +9,6 @@ function print(el) {
 }
 arr.forEach(print);
 
-
-
 //Map(make new array to store the values)
 
 let num = [2,3,4,5];
@@ -144,6 +142,3 @@ const student = {
 const{ username: user, name: name, city: place ="mumbai" } = student;
 
 console.log(user,name,place);
-
-
-
