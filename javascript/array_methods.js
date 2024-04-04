@@ -47,21 +47,21 @@ let an = nums.filter((el) => {
 console.log(ans);
 console.log(an);
 
+//every function(returns true if every function is true)
 
+console.log([2,6,4].every((el) => el%2 == 0));
 
+console.log([2,6,4].every((el) => el%2 != 0));
 
+console.log([1,3,5].every((el) => el%2 != 0));
 
+//Some function(returns true if some elements of array give true)
 
+console.log([1,3,5].some((el) => el%2 != 0));
 
+console.log([2,6,4].some((el) => el%2 != 0));
 
-
-
-
-
-
-
-
-
+console.log([2,6,4].some((el) => el%2 == 0));
 
 
 
