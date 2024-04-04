@@ -67,10 +67,21 @@ console.log([2,6,4].some((el) => el%2 != 0));
 
 console.log([2,6,4].some((el) => el%2 == 0));
 
+//Reduce function(reduces the array to single value)
 
+console.log([1,2,3,4].reduce((res,el) => (res+el))); //(10)
 
+//maximum in an array
 
+let numb = [2,3,4,5,3,4,7,8,1,12];
 
-
+let result = numb.reduce( (max,el) => {
+    if(el>max){
+        return el;
+    } else {
+        return max;
+    }
+});
+console.log(result);
 
 
