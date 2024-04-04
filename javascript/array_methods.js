@@ -147,7 +147,3 @@ console.log(user,name,place);
 
 
 
-
-
-
-
