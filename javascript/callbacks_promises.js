@@ -41,14 +41,24 @@ function savetodb(data){
 }
 
 //then() and catch()
+//promise chaining
 
 let request = savetodb("internet");
 request
-.then(() => {
-    console.log("promise resolved");
-})
-.catch(() => {
-    console.log("promise rejeted");
+    .then(() => {
+      console.log("data1 saved");
+      return savetodb("helloworld");//returned and saved then new promise
+    })
+        .then(() => {
+          console.log("data2 saved")
+          return savetodb("snehal");//returned and saved then new promise
+        })
+            .then(() => {
+              console.log("data3 saved")
+            })
+
+    .catch(() => {
+      console.log("promise rejeted");
 });
 
 
