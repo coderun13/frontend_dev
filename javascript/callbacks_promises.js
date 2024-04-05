@@ -33,14 +33,28 @@ function savetodb(data){
     return new Promise((resolve,reject) =>{
         let internetSpeed = Math.floor(Math.random() * 10)+1;
         if(internetSpeed > 4){
-            resolve("data was saved");
+            resolve("success: data was saved");
         }else{
-            reject("weak connection");
+            reject("failure: weak connection");
         }
     })
 }
 
-savetodb("internet");
+//then() and catch()
+
+let request = savetodb("internet");
+request
+.then(() => {
+    console.log("promise resolved");
+})
+.catch(() => {
+    console.log("promise rejeted");
+});
+
+
+
+
+
 
 
 
