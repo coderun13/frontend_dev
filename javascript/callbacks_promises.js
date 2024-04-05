@@ -45,19 +45,23 @@ function savetodb(data){
 
 let request = savetodb("internet");
 request
-    .then(() => {
+    .then((result) => {
+      console.log("result:",result);
       console.log("data1 saved");
       return savetodb("helloworld");//returned and saved then new promise
     })
-        .then(() => {
+        .then((result) => {
+          console.log("result:",result);
           console.log("data2 saved")
           return savetodb("snehal");//returned and saved then new promise
         })
-            .then(() => {
+            .then((result) => {
+              console.log("result:",result);
               console.log("data3 saved")
             })
 
-    .catch(() => {
+    .catch((error) => {
+      console.log("error",error);  
       console.log("promise rejeted");
 });
 
