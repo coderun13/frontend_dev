@@ -62,3 +62,23 @@ let id = setInterval( () => {
 
   clearInterval(id);//stop setinterval
 
+//this with arrow function
+
+const students = {
+    name: "snehal",
+    age: 19,
+    marks: 95,
+    prop: this, //global scope
+    getname: function() {
+        console.log(this);
+       return this.name;
+    },
+    getMarks: () => {
+        console.log(this); //parent's scope -> window
+        return this.marks;
+    },
+};
+console.log(students.getname());
+console.log(students.getMarks());//can't print because window is the scope
+
+
