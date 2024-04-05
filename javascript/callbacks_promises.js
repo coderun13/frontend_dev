@@ -56,12 +56,12 @@ request
           return savetodb("snehal");//returned and saved then new promise
         })
             .then((result) => {
-              console.log("result:",result);
+              console.log("result:",result);//result statement
               console.log("data3 saved")
             })
 
     .catch((error) => {
-      console.log("error",error);  
+      console.log("error",error);//error statement  
       console.log("promise rejeted");
 });
 
